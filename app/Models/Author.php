@@ -3,8 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-
-class Author extends Model
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+class Books extends Model
 {
-    //
+    use HasFactory;
+
+protected $fillable = ['title', 'author', 'year'];
 }
+
